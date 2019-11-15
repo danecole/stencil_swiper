@@ -1,0 +1,55 @@
+@import "~swiper/dist/css/swiper.css";
+@import "material-design-iconic-font.min.css";
+
+dc-swiper {
+	display: block;
+}
+
+.swiper-slide {
+	height:auto;
+}
+
+figure {
+	margin: 0px;
+}
+
+.swiper__slide-image {
+	width:100%;
+	height:auto;
+   }
+
+.swiper__nav-arrow-prev {
+	left: 5%;
+	background-image: none;
+}
+
+.swiper__nav-arrow-next {
+	right: 5%;
+	background-image: none;
+}
+
+.swiper__nav-arrow {
+    user-select: none;
+    position: absolute;
+    display: block;
+    background-color: rgba(250,252,252,.25);
+    border-radius: 100%;
+    min-width: 48px;
+    width: 5%;
+    max-width: 48px;
+    top: 55%;
+    transform: translateY(-55%);
+    cursor: pointer;
+    z-index: 1000;
+    line-height: 1.15;
+    height:48px;
+}
+
+.swiper__nav-arrow-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #8f8f8f;
+
+}

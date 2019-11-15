@@ -1,0 +1,34 @@
+{
+  "name": "@danecole/stencil_swiper",
+  "version": "0.0.1",
+  "description": "StencilJS web component for Swiper",
+  "module": "dist/esm/index.js",
+  "main": "dist/index.js",
+  "types": "dist/types/components.d.ts",
+  "collection": "dist/collection/collection-manifest.json",
+  "files": [
+    "dist/"
+  ],
+  "scripts": {
+    "build": "stencil build",
+    "start": "stencil build --dev --watch --serve",
+    "test": "stencil test --spec --e2e",
+    "test.watch": "stencil test --spec --e2e --watchAll"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@stencil/core": "~0.13.2",
+    "@stencil/sass": "^0.1.1",
+    "@types/jest": "23.3.5",
+    "@types/puppeteer": "1.9.0",
+    "jest": "23.5.0",
+    "jest-environment-node": "23.4.0",
+    "pixelmatch": "4.0.2",
+    "puppeteer": "1.7.0",
+    "swiper": "^4.4.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danecole/swiper.git"
+  }
+}
