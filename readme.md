@@ -12,6 +12,6 @@ Grab the files you need from the production build
 
 # Finished Version
 
-Can be found [here](https://github.com/danecole/swipertest)
+A sample of the folder strucutre and build files can be found [here](https://github.com/danecole/swipertest)
 
-And a demo can be found [here](http://danecole.com/swipertest/)
+A working demo can be found [here](http://danecole.com/swipertest/)
