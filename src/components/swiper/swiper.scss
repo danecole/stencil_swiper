@@ -1,6 +1,14 @@
 @import "~swiper/dist/css/swiper.css";
 @import "material-design-iconic-font.min.css";
 
+//breakpoint
+$screen-lg-min: 768px;
+@mixin lg {
+    @media (min-width: #{$screen-lg-min}) {
+        @content;
+    }
+ }
+
 dc-swiper {
 	display: block;
 }
@@ -13,10 +21,23 @@ figure {
 	margin: 0px;
 }
 
-.swiper__slide-image {
+.swiper__slide-image--desktop {
 	width:100%;
-	height:auto;
-   }
+    height:auto;
+    display:none;
+    @include lg {
+        display:block;
+    }
+}
+
+.swiper__slide-image--mobile {
+	width:100%;
+    height:auto;
+    display:block;
+    @include lg {
+        display:none;
+    }
+}
 
 .swiper__nav-arrow-prev {
 	left: 5%;
@@ -31,10 +52,9 @@ figure {
 .swiper__nav-arrow {
     user-select: none;
     position: absolute;
-    display: block;
     background-color: rgba(250,252,252,.25);
     border-radius: 100%;
-    min-width: 48px;
+    min-width: 44px;
     width: 5%;
     max-width: 48px;
     top: 55%;
@@ -51,5 +71,4 @@ figure {
     left: 50%;
     transform: translate(-50%,-50%);
     color: #8f8f8f;
-
 }
